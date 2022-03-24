@@ -24,11 +24,11 @@ export default function Header() {
                       </li>
                     ))}
                   </Box>
-                  <Button variant="text" sx={styles.getStartedDesktop}>
+                  <Button variant="primary" sx={styles.getStartedDesktop}>
                     Get Started
                   </Button>
                 </Box>
-                <Button variant="text" sx={styles.getStartedMobile}>
+                <Button variant="primary" sx={styles.getStartedMobile}>
                   Get Started
                 </Button>
                 <NavbarDrawer />
@@ -97,7 +97,7 @@ const styles = {
     },
   },
   getStartedDesktop: {
-    color: "primary",
+    //color: "primary",
     display: ["none", "none", "none", "none", "flex"],
   },
   getStartedMobile: {
