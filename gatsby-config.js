@@ -5,10 +5,22 @@ module.exports = {
     description: "to test",
     author : "Sudarshan Jagadale"
   },
-  plugins: ["gatsby-plugin-image", "gatsby-plugin-react-helmet", "gatsby-plugin-sitemap", {
+  plugins: ["gatsby-plugin-image", "gatsby-plugin-react-helmet", "gatsby-plugin-sitemap", 
+  {
+    resolve: `gatsby-plugin-theme-ui`
+    /*options: {
+     preset: "@theme-ui/preset-funk",
+    }*/
+  },{
     resolve: 'gatsby-plugin-manifest',
     options: {
-      "icon": "src/images/icon.png"
+      name: `my-dadaai-site`,
+        short_name: `starter`,
+        start_url: `/`,
+        background_color: `#663399`,
+        theme_color: `#663399`,
+        display: `minimal-ui`,
+        icon: "src/images/icon.png"
     }
   }, "gatsby-plugin-mdx", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
     resolve: 'gatsby-source-filesystem',
